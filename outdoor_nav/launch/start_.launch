@@ -1,16 +1,20 @@
 <launch>
     <!--map server with empty map-->
-    <!--
+    
     <include file="$(find outdoor_nav)/launch/start_map_server.launch"/>
-    -->
+    
     <!--Robot localization: ekf  and navsat-->
     <include file="$(find outdoor_nav)/launch/start_navigation_with_gps.launch"/>
 
     <!--move base node with empty map-->
-    <include file="$(find husky_navigation)/launch/move_base.launch"/>
-
-    <!--without empty map- gmapping -->
     
+    <include file="$(find husky_navigation)/launch/move_base.launch"/>
+    
+    <!--move base node with empty map-->
+    <!--
+    <include file="$(find husky_navigation)/launch/move_base_mapless_demo.launch"/>
+    -->
+    <!--without empty map- gmapping -->
     <include file="$(find husky_navigation)/launch/gmapping.launch"/> 
     
 </launch>
