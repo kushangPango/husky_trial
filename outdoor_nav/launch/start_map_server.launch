@@ -1,0 +1,5 @@
+<launch>
+    <arg name="map_file" value="$(find outdoor_nav)/maps/mymap_empty.yaml"/>
+    <node name="map_server" pkg="map_server" type="name_server" args="$(arg map_file)"/>
+
+</launch>
