@@ -1,8 +1,11 @@
+#Reference: https://docs.ros.org/en/api/geodesy/html/python/geodesy.utm.html
 import geodesy
 
 lat=10
 long=10
 point=geodesy.utm.fromLAtLong(lat,long)
+
+##Reference from https://defiant.homedns.org/gitweb/?p=ros_wild_thumper.git;a=blob;f=scripts/gps_follow_waypoints.py;h=78eaea5a6715cbc093f172332f4d0ec56c54561f;hb=HEAD
 
 ##!/usr/bin/env python# -*- coding: iso-8859-15 -*-import sysimport rospyimport tfimport actionlibimport tf2_rosimport dynamic_reconfigure.client
 #import numpy as np
